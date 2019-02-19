@@ -20,12 +20,12 @@ public class KafkaConfig {
     }
 
     @Bean
-    public NewTopic topic1() {
+    public NewTopic foo() {
         return new NewTopic("foo", 4, (short) 2);
     }
 
     @Bean
-    public NewTopic topic2() {
+    public NewTopic bar() {
         return new NewTopic("bar", 2, (short) 1);
     }
 }
